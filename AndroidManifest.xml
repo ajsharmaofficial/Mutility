@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sgapps.firstapps.mutility"
+    android:versionCode="2"
+    android:versionName="1.1">
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+    
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="sgapps.firstapps.mutility.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <permission android:protectionLevel="signature" android:name="sgapps.firstapps.mutility.permission.MAPS_RECEIVE"></permission>
+    
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="sgapps.firstapps.mutility.Welcome"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="sgapps.firstapps.mutility.Listactivity"
+            android:label="@string/title_activity_listactivity" >
+        </activity>
+         <activity
+            android:name="sgapps.firstapps.mutility.MainActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="sgapps.firstapps.mutility.TicTacToe"
+            android:label="@string/title_activity_tic_tac_toe" >
+        </activity>
+        <activity
+            android:name="sgapps.firstapps.mutility.TicTacToe_s"
+            android:label="@string/title_activity_tic_tac_toe_s" >
+        </activity>
+        <activity
+            android:name="sgapps.firstapps.mutility.Key_Store"
+            android:label="@string/title_activity_key__store" >
+        </activity>
+        <activity
+            android:name="sgapps.firstapps.mutility.Locate_me"
+            android:label="@string/title_activity_locate_me" >
+        </activity>
+        <activity
+            android:name="sgapps.firstapps.mutility.PinCode"
+            android:label="@string/title_activity_pin_code" >
+        </activity>
+        <activity
+            android:name="sgapps.firstapps.mutility.NearPlace"
+            android:label="@string/title_activity_near_place" >
+        </activity>
+        <activity
+            android:name="sgapps.firstapps.mutility.Browser"
+            android:label="@string/title_activity_browser" >
+        </activity>
+        <activity
+            android:name="sgapps.firstapps.mutility.MoodyMind"
+            android:label="@string/title_activity_moody_mind" >
+        </activity>
+        <activity
+            android:name="sgapps.firstapps.mutility.Middle"
+            android:label="@string/title_activity_middle" >
+        </activity>
+        <activity
+            android:name="sgapps.firstapps.mutility.Result"
+            android:label="@string/title_activity_result" >
+        </activity>
+        <activity
+            android:name="sgapps.firstapps.mutility.Credits"
+            android:label="@string/title_activity_credits" >
+        </activity>
+        
+        
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBdRnxHOE-0z1_iZcRZA6J10JS8PEQTMBo" />
+    </application>
+
+</manifest>
